@@ -28,3 +28,19 @@ Scikit-learn is a free software machine learning library for the Python programm
 
 # Exploring The Feature Engineering 
 
+STEP2: Second step consist of the feature engineering part which will do the (new feature called price per square feet).
+
+df3['price_per_sqft'] = df3['Price']*100000/df3['Area']
+
+(b) - Examine locations which is a categorical variable. We need to apply dimensionality reduction technique here to reduce number of locations
+
+df3.Location = df3.Location.apply(lambda x: x.strip())
+Location_stats = df3['Location'].value_counts(ascending=False)
+
+# Dimensionality Reduction
+
+STEP3: Third step consist of the Any location having less than 10 data points should be tagged as "other" location. This way number of categories can be reduced by huge amount. Later on when we do one hot encoding, it will help us with having fewer dummy columns
+
+# Build The Model
+
+STEP4: Building the model for the deployment and use Logistic regression
