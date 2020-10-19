@@ -46,3 +46,9 @@ STEP3: Third step consist of the Any location having less than 10 data points sh
 STEP4: Building the model for the deployment and use Logistic regression for getting the prediction score ((np.sqrt(mean_squared_error(y_test,prediction)))) and why we use Logistic Regression because the logistic model is used to model the probability of a certain class or event existing such as pass/fail, win/lose, alive/dead or healthy/sick.
  
 So this becomes the perfect case for losgistic regression
+
+# *Deployment*
+
+STEP5: Creating the Pickle File for the deployment (Python pickle module is used for serializing and de-serializing a Python object structure. Any object in Python can be pickled so that it can be saved on disk. What pickle does is that it “serializes” the object first before writing it to file. Pickling is a way to convert a python object (list, dict, etc.))
+
+Export location and column information to a file that will be useful later on in our prediction application
