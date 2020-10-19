@@ -1,1 +1,0 @@
-# Land-price-prediction-Delhi-
